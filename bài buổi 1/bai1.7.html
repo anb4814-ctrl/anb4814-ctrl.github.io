@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1.7 - Bảng Bootstrap</title>
+    <!-- Nhúng Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Bài 1.7: Sử dụng Table tạo bảng theo mẫu</h2>
+
+        <!-- ================= BÀI 1.7 - PHẦN A ================= -->
+        <h4 class="mb-3">a) Tạo bảng theo ngữ cảnh</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Bill</th>
+                    <th scope="col">Payment Date</th>
+                    <th scope="col">Payment Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sử dụng các class ngữ cảnh của Bootstrap (Contextual classes) -->
+                <tr class="table-primary">
+                    <td>1</td>
+                    <td>Credit Card</td>
+                    <td>04/07/2021</td>
+                    <td>Waiting for statement</td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>2</td>
+                    <td>Insurance</td>
+                    <td>02/07/2021</td>
+                    <td>Cancelled</td>
+                </tr>
+                <tr class="table-success">
+                    <td>3</td>
+                    <td>Water</td>
+                    <td>01/07/2021</td>
+                    <td>Paid</td>
+                </tr>
+                <tr class="table-info">
+                    <td>4</td>
+                    <td>Internet</td>
+                    <td>05/07/2021</td>
+                    <td>Change plan</td>
+                </tr>
+                <tr class="table-warning">
+                    <td>5</td>
+                    <td>Electricity</td>
+                    <td>03/07/2021</td>
+                    <td>Pending</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>6</td>
+                    <td>Telephone</td>
+                    <td>06/07/2021</td>
+                    <td>Due</td>
+                </tr>
+                <tr class="table-light">
+                    <td>7</td>
+                    <td>Car Service</td>
+                    <td>08/07/2021</td>
+                    <td>Call in to confirm</td>
+                </tr>
+                <tr class="table-dark">
+                    <td>8</td>
+                    <td>Gas</td>
+                    <td>06/07/2021</td>
+                    <td>Payment failed</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="my-5">
+
+        <!-- ================= BÀI 1.7 - PHẦN B ================= -->
+        <h4 class="mb-3">b) Thiết kế bảng hiển thị tốt trên mọi thiết bị và hỗ trợ cuộn ngang khi vượt quá chiều rộng màn hình.</h4>
+        <h3 class="mb-3">Bảng thông tin sinh viên</h3>
+        
+        <!-- Thêm thẻ div bọc ngoài với class table-responsive để tạo thanh cuộn ngang -->
+        <div class="table-responsive mb-3">
+            <!-- Thêm class text-nowrap để text không bị xuống dòng, ép bảng phải hiển thị thanh cuộn -->
+            <table class="table table-striped text-nowrap">
+                <thead>
+                    <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Họ</th>
+                        <th scope="col">Tên</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Ghi chú</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Nguyễn</td>
+                        <td>Mai Lan</td>
+                        <td>nguyen.lan@sinhvien.edu.vn</td>
+                        <td>Sinh viên năm 3 ngành Công nghệ thông tin</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Trần</td>
+                        <td>Công Minh</td>
+                        <td>tran.minh@sinhvien.edu.vn</td>
+                        <td>Thành viên CLB lập trình</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Phạm</td>
+                        <td>Thu Huyền</td>
+                        <td>pham.huyen@sinhvien.edu.vn</td>
+                        <td>Quan tâm đến Trí tuệ nhân tạo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <p><strong>Ghi chú:</strong> Bảng sẽ hiển thị cuộn ngang nếu không đủ không gian hiển thị trên thiết bị.</p>
+    </div>
+
+    <!-- Nhúng Script của Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
